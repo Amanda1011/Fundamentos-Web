@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" href="assets/img/favicon-32x32.png" />
+    <title>Contato</title>
+</head>
+
+<body>
+    <div id="menu">
+        <ul>
+            <li>
+                <a href="index.html"> Home </a>
+            </li>
+        </ul>
+    </div>
+    <hr />
+
+    <h1 class="center">Entre em contato comigo</h1>
+
+    <div class="container mb-50">
+        <div>
+            <form>
+                <label for="nome">Nome: </label> <br />
+                <input type="text" id="nome" onkeyup='validarNome()' />
+                <div id="txtNome"></div>
+                <br />
+                <label for="E-mail:">E-mail: </label> <br />
+                <input type="email" id="email" onkeyup='validarEmail()' />
+                <div id="txtEmail"></div>
+                <br />
+                <label for="assunto">Assunto: </label> <br />
+                <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup='validaAssunto()'> </textarea>
+                <div id="txtAssunto"></div>
+                <br />
+                <br />
+                <button onclick='enviar()'>Enviar</button>
+            </form>
+        </div>
+
+        <div class="ml-50">
+            <p class="center">Av. Engenho Muribara</p>
+            <p class="center">Recife - PE</p>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.887438293354!2d-34.95208948548758!3d-8.112942483422463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1e7864b74a63%3A0x5c304cd583c8dc80!2sAv.%20Engenho%20Muribara%20-%20COHAB%2C%20Recife%20-%20PE%2C%2051270-260!5e0!3m2!1spt-BR!2sbr!4v1661348288669!5m2!1spt-BR!2sbr"
+                width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" onmousemove='mapaZomm()' onmouseout='mapaNormal()' id='mapa'></iframe>
+        </div>
+    </div>
+
+    <hr />
+    <footer class="center">
+        <div class="container">
+            <a href="https://www.linkedin.com/in/amanda-pereira-8b1852235/" target="_blank">
+                <img class="social" src="assets/img/linkedin.png" alt="Logo do linkedin" />
+            </a>
+
+            <a href="https://github.com/Amanda1011" target="_blank">
+                <img class="social" src="assets/img/github.png" alt="logo do github" />
+            </a>
+        </div>
+        Todos os direitos reservados: Amanda Santos &copy
+    </footer>
+</body>
+<script src="assets/js/script.js"></script>
+
+</html>
